@@ -12,6 +12,37 @@
 // the quantity bought.
 // fn calculate_price_of_apples(???) -> ??? { ??? }
 
+// Origial cost of apple is let mut price = 2 rustbucks
+// price of each apple remans 2 for each when order <= 40
+// total_price = price * order
+//price = 1 when order > 40
+// print total price
+
+fn calculate_price_of_apples(total_order_no:i64) -> i64 {
+    
+
+    // (if total_order_no > 40 {
+    //     1
+    // } else {
+    //     2
+    // }) * total_order_no
+
+    let price = if total_order_no > 40 {1} else {2};
+
+    let total_price = price * total_order_no;
+    total_price
+
+    // Lesson learnt
+    //You must return a value from functions, and statements need semicolons unless they are the final expression you want to return.
+
+
+  
+
+
+
+}
+
+
 fn main() {
     // You can optionally experiment here.
 }
